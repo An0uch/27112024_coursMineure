@@ -11,8 +11,10 @@ st.title('Bonjour  :) !')
 df = pd.DataFrame(values, columns=feature_names)
 df
 plot = df['alcoohol']
-st.write('Paf, le graphique de la colonne alcool')
-st.line_chart(plot)
+bot = st.checkbox('Afficher le graphique de la colonne alcool')
+if bot:
+  st.line_chart(plot)
+
 
 
 
